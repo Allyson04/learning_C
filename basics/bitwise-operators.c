@@ -86,4 +86,7 @@ int main() {
     //  1   1   1 | 0   0   1   0   0
     // since >> and <<  is opposites, here math.pow do the opposite too, so 8 >> 2 ==> 8 * 2^-2 ==> 8 * 1/2^2 ==> 8 * 1/4
 
+    // >>> (unsigned right shift)
+    //here the difference between it and the commom right shift is that all empty bits is filled with 0
+    // this way, the number returned is always a positive integer
 }
