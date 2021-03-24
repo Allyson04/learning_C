@@ -4,6 +4,7 @@ int main() {
     //in C memory operation was crucial for his popularity, that's why we could use bitwise operators
     // 0 => false | 1 => true
 
+
     // & (and)
     // and example for code using & is checking if a number is even or odd
     //  37   0   0   1   0   0   1   0   1
@@ -21,6 +22,7 @@ int main() {
     //       -----------------------------
     //       0   0   1   1   0   1   1   1 
     // if either position have 1, it gives back 1
+
 
     // ~ (not)
     // here we use an integer after it, so it transforms any 0 to 1 and 1 to 0
@@ -49,6 +51,7 @@ int main() {
    //other tip, we can see if a number is negative of positive based on the leftmost digit, so:
    // 1 => negative, to use his positive number we do the two's complement of it
    // 0 => positive 
+
 
     // ^ (XOR)
     // here true or 1 is send only if one of the digits is 1, otherwise (if the two digits is 1 or 0) it will send 0
@@ -85,6 +88,7 @@ int main() {
     //and then we check, is the this number positive? his leftmost digit is 0? in this case not, so we fill and empty spaces with 1
     //  1   1   1 | 0   0   1   0   0
     // since >> and <<  is opposites, here math.pow do the opposite too, so 8 >> 2 ==> 8 * 2^-2 ==> 8 * 1/2^2 ==> 8 * 1/4
+
 
     // >>> (unsigned right shift)
     //here the difference between it and the commom right shift is that all empty bits is filled with 0
