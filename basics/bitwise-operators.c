@@ -22,4 +22,10 @@ int main() {
     //       0   0   1   1   0   1   1   1 
     // if either position have 1, it gives back 1
 
+    // ~ (not)
+    // here we use an integer after it, so it transforms any 0 to 1 and 1 to 0
+    // example:
+    // ~37
+    // 00100101 => 11011010
+
 }
