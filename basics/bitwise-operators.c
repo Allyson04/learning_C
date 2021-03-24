@@ -50,4 +50,11 @@ int main() {
    // 1 => negative, to use his positive number we do the two's complement of it
    // 0 => positive 
 
+    // ^ (XOR)
+    // here true or 1 is send only if one of the digits is 1, otherwise (if the two digits is 1 or 0) it will send 0
+    // using 37 ^ 23 for example
+    //  37   |  0   0   1   0   0   1   0   1
+    // ^23   |  0   0   0   1   0   1   1   1
+    //---------------------------------------
+    //          0   0   1   1   0   0   1   0
 }
