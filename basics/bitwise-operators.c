@@ -57,4 +57,22 @@ int main() {
     // ^23   |  0   0   0   1   0   1   1   1
     //---------------------------------------
     //          0   0   1   1   0   0   1   0
+
+    // as we can see, the ^ (XOR) operator we uses, like toggling
+
+
+    // << (shift left)
+    //using 37 << 3 as example
+    // on the left side of the operation (37) is the number being shifted
+    // on the right side (3) we have how much of it is being shifted
+    // but what it means by "shifting"? is it adding 3 points to it? of course not!
+    // what we do is selecting all digits, from left to right, until the 4th digit, putting this as an illustration:
+    //  0   0   1 | 0   0   1   0   1 
+    //this bar separates all digits we are going to erase, and at the beginning of the number we add 3 zeroes, just like that:
+    //  0   0   1   0   1   0   0   0
+
+    // so, we have any practical examples for this? obviously!
+    // 37 << n is the same for 37 * Math.pow(2,n) and equal as 37 * 2^n
+    // this way, if we use << we can be more code-efficient
+    // **math.pow is used to determine the power of something, so: math.pow(n, m) == n^m
 }
