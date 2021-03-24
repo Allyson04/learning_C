@@ -13,4 +13,13 @@ int main() {
     // at last, because of the last digit in the first number is 1, we already know that the number is odd
     // if it was even, it would end as 0
 
+
+    // | (or)
+    // using a new example, we have
+    //  37   0   0   1   0   0   1   0   1
+   // | 23   0   0   0   1   0   1   1   1
+    //       -----------------------------
+    //       0   0   1   1   0   1   1   1 
+    // if either position have 1, it gives back 1
+
 }
