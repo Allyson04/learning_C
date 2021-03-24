@@ -75,4 +75,15 @@ int main() {
     // 37 << n is the same for 37 * Math.pow(2,n) and equal as 37 * 2^n
     // this way, if we use << we can be more code-efficient
     // **math.pow is used to determine the power of something, so: math.pow(n, m) == n^m
+
+
+    // >> (right shift)
+    // You may think that here will be same thing as the left shift, but on the right, and you are most correct, but here the difference is with what this empty bits is filled with.
+    // if we dispense n-nth digits with >>, we will have to add n digits to the left side of the number, this way, changing the signal
+    // for example: 37 
+    //  0   0   1   0   0 | 1   0   1
+    //and then we check, is the this number positive? his leftmost digit is 0? in this case not, so we fill and empty spaces with 1
+    //  1   1   1 | 0   0   1   0   0
+    // since >> and <<  is opposites, here math.pow do the opposite too, so 8 >> 2 ==> 8 * 2^-2 ==> 8 * 1/2^2 ==> 8 * 1/4
+
 }
